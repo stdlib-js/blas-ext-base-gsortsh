@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/blas-ext-base-gsortsh",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Sort a strided array using Shellsort.",
   "license": "Apache-2.0",
   "author": {
