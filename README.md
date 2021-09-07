@@ -187,6 +187,24 @@ console.log( x );
 
 <!-- /.references -->
 
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+* * *
+
+## See Also
+
+-   [`@stdlib/blas/ext/base/dsortsh`][@stdlib/blas/ext/base/dsortsh]: sort a double-precision floating-point strided array using Shellsort.
+-   [`@stdlib/blas/ext/base/gsort2sh`][@stdlib/blas/ext/base/gsort2sh]: simultaneously sort two strided arrays based on the sort order of the first array using Shellsort.
+-   [`@stdlib/blas/ext/base/ssortsh`][@stdlib/blas/ext/base/ssortsh]: sort a single-precision floating-point strided array using Shellsort.
+
+</section>
+
+<!-- /.related -->
+
+<!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
 
 <section class="main-repo" >
 
@@ -246,15 +264,21 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 
 [mdn-typed-array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray
 
-[@stdlib/blas/ext/base/dsortsh]: https://github.com/stdlib-js/blas-ext-base-dsortsh
-
-[@stdlib/blas/ext/base/ssortsh]: https://github.com/stdlib-js/blas-ext-base-ssortsh
-
 [@shell:1959a]: https://doi.org/10.1145/368370.368387
 
 [@sedgewick:1986a]: https://doi.org/10.1016/0196-6774(86)90001-5
 
 [@ciura:2001a]: https://doi.org/10.1007/3-540-44669-9_12
+
+<!-- <related-links> -->
+
+[@stdlib/blas/ext/base/dsortsh]: https://github.com/stdlib-js/blas-ext-base-dsortsh
+
+[@stdlib/blas/ext/base/gsort2sh]: https://github.com/stdlib-js/blas-ext-base-gsort2sh
+
+[@stdlib/blas/ext/base/ssortsh]: https://github.com/stdlib-js/blas-ext-base-ssortsh
+
+<!-- </related-links> -->
 
 </section>
 
