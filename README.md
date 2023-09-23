@@ -18,26 +18,47 @@ limitations under the License.
 
 -->
 
+
+<details>
+  <summary>
+    About stdlib...
+  </summary>
+  <p>We believe in a future in which the web is a preferred environment for numerical computation. To help realize this future, we've built stdlib. stdlib is a standard library, with an emphasis on numerical and scientific computation, written in JavaScript (and C) for execution in browsers and in Node.js.</p>
+  <p>The library is fully decomposable, being architected in such a way that you can swap out and mix and match APIs and functionality to cater to your exact preferences and use cases.</p>
+  <p>When you use stdlib, you can be absolutely certain that you are using the most thorough, rigorous, well-written, studied, documented, tested, measured, and high-quality code out there.</p>
+  <p>To join us in bringing numerical computing to the web, get started by checking us out on <a href="https://github.com/stdlib-js/stdlib">GitHub</a>, and please consider <a href="https://opencollective.com/stdlib">financially supporting stdlib</a>. We greatly appreciate your continued support!</p>
+</details>
+
 # gsortsh
 
 [![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
 
 > Sort a strided array using Shellsort.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/blas-ext-base-gsortsh
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import gsortsh from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-ext-base-gsortsh@deno/mod.js';
-```
-
-You can also import the following named exports from the package:
-
-```javascript
-import { ndarray } from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-ext-base-gsortsh@deno/mod.js';
+var gsortsh = require( '@stdlib/blas-ext-base-gsortsh' );
 ```
 
 #### gsortsh( N, order, x, stride )
@@ -61,7 +82,7 @@ The function has the following parameters:
 The `N` and `stride` parameters determine which elements in `x` are accessed at runtime. For example, to sort every other element
 
 ```javascript
-import floor from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-floor@deno/mod.js';
+var floor = require( '@stdlib/math-base-special-floor' );
 
 var x = [ 1.0, -2.0, 3.0, -4.0 ];
 var N = floor( x.length / 2 );
@@ -73,8 +94,8 @@ gsortsh( N, -1.0, x, 2 );
 Note that indexing is relative to the first index. To introduce an offset, use [`typed array`][mdn-typed-array] views.
 
 ```javascript
-import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@deno/mod.js';
-import floor from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-floor@deno/mod.js';
+var Float64Array = require( '@stdlib/array-float64' );
+var floor = require( '@stdlib/math-base-special-floor' );
 
 // Initial array...
 var x0 = new Float64Array( [ 1.0, 2.0, 3.0, 4.0 ] );
@@ -140,10 +161,10 @@ gsortsh.ndarray( 3, 1.0, x, 1, x.length-3 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import round from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-round@deno/mod.js';
-import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@deno/mod.js';
-import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@deno/mod.js';
-import gsortsh from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-ext-base-gsortsh@deno/mod.js';
+var round = require( '@stdlib/math-base-special-round' );
+var randu = require( '@stdlib/random-base-randu' );
+var Float64Array = require( '@stdlib/array-float64' );
+var gsortsh = require( '@stdlib/blas-ext-base-gsortsh' );
 
 var rand;
 var sign;
@@ -210,7 +231,7 @@ console.log( x );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -240,8 +261,8 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/blas-ext-base-gsortsh.svg
 [npm-url]: https://npmjs.org/package/@stdlib/blas-ext-base-gsortsh
 
-[test-image]: https://github.com/stdlib-js/blas-ext-base-gsortsh/actions/workflows/test.yml/badge.svg?branch=main
-[test-url]: https://github.com/stdlib-js/blas-ext-base-gsortsh/actions/workflows/test.yml?query=branch:main
+[test-image]: https://github.com/stdlib-js/blas-ext-base-gsortsh/actions/workflows/test.yml/badge.svg?branch=v0.1.0
+[test-url]: https://github.com/stdlib-js/blas-ext-base-gsortsh/actions/workflows/test.yml?query=branch:v0.1.0
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/blas-ext-base-gsortsh/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/blas-ext-base-gsortsh?branch=main
@@ -282,11 +303,11 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/blas/ext/base/dsortsh]: https://github.com/stdlib-js/blas-ext-base-dsortsh/tree/deno
+[@stdlib/blas/ext/base/dsortsh]: https://github.com/stdlib-js/blas-ext-base-dsortsh
 
-[@stdlib/blas/ext/base/gsort2sh]: https://github.com/stdlib-js/blas-ext-base-gsort2sh/tree/deno
+[@stdlib/blas/ext/base/gsort2sh]: https://github.com/stdlib-js/blas-ext-base-gsort2sh
 
-[@stdlib/blas/ext/base/ssortsh]: https://github.com/stdlib-js/blas-ext-base-ssortsh/tree/deno
+[@stdlib/blas/ext/base/ssortsh]: https://github.com/stdlib-js/blas-ext-base-ssortsh
 
 <!-- </related-links> -->
 
