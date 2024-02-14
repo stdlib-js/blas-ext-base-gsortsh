@@ -42,13 +42,18 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import gsortsh from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-ext-base-gsortsh@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/blas-ext-base-gsortsh/tags). For example,
+
+```javascript
 import gsortsh from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-ext-base-gsortsh@v0.2.0-esm/index.mjs';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { ndarray } from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-ext-base-gsortsh@v0.2.0-esm/index.mjs';
+import { ndarray } from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-ext-base-gsortsh@esm/index.mjs';
 ```
 
 #### gsortsh( N, order, x, stride )
@@ -159,7 +164,7 @@ gsortsh.ndarray( 3, 1.0, x, 1, x.length-3 );
 import round from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-round@esm/index.mjs';
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@esm/index.mjs';
 import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@esm/index.mjs';
-import gsortsh from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-ext-base-gsortsh@v0.2.0-esm/index.mjs';
+import gsortsh from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-ext-base-gsortsh@esm/index.mjs';
 
 var rand;
 var sign;
