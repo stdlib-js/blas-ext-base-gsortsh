@@ -1,7 +1,10 @@
-"use strict";var c=function(o,f){return function(){return f||o((f={exports:{}}).exports,f),f.exports}};var l=c(function(D,S){S.exports=[701,301,132,57,23,10,4,1]});var h=c(function(E,s){
-var y=require('@stdlib/math-base-assert-is-negative-zero/dist'),b=require('@stdlib/math-base-assert-is-nan/dist'),p=l(),j=p.length;function Z(o,f,a,r){var i,q,n,v,g,t,u,e;if(o<=0||f===0)return a;for(f<0&&(r*=-1),r<0?i=(1-o)*r:i=0,t=0;t<j;t++)for(n=p[t],u=n;u<o;u++)if(v=a[i+u*r],!b(v)){for(q=y(v),e=u;e>=n&&(g=a[i+(e-n)*r],!(g<=v&&!(q&&g===v)));e-=n)a[i+e*r]=g;a[i+e*r]=v}return a}s.exports=Z
-});var G=c(function(F,A){
-var m=require('@stdlib/math-base-assert-is-negative-zero/dist'),O=require('@stdlib/math-base-assert-is-nan/dist'),k=l(),R=k.length;function w(o,f,a,r,i){var q,n,v,g,t,u,e;if(o<=0||f===0)return a;for(f<0&&(r*=-1,i-=(o-1)*r),t=0;t<R;t++)for(n=k[t],u=n;u<o;u++)if(v=a[i+u*r],!O(v)){for(q=m(v),e=u;e>=n&&(g=a[i+(e-n)*r],!(g<=v&&!(q&&g===v)));e-=n)a[i+e*r]=g;a[i+e*r]=v}return a}A.exports=w
-});var z=require('@stdlib/utils-define-nonenumerable-read-only-property/dist'),P=h(),B=G();z(P,"ndarray",B);module.exports=P;
+"use strict";var h=function(e,v){return function(){return v||e((v={exports:{}}).exports,v),v.exports}};var k=h(function(T,m){m.exports=[701,301,132,57,23,10,4,1]});var f=h(function(U,b){
+var O=require('@stdlib/math-base-assert-is-negative-zero/dist'),R=require('@stdlib/math-base-assert-is-nan/dist'),P=k(),w=P.length;function z(e,v,a,r,u){var q,s,g,t,c,i,o,n,p,l;for(q=a.data,s=a.accessors[0],g=a.accessors[1],v<0&&(r*=-1,u-=(e-1)*r),n=0;n<w;n++)for(c=P[n],p=c;p<e;p++)if(i=s(q,u+p*r),!R(i)){for(t=O(i),l=p;l>=c&&(o=s(q,u+(l-c)*r),!(o<=i&&!(t&&o===i)));l-=c)g(q,u+l*r,o);g(q,u+l*r,i)}return a}b.exports=z
+});var y=h(function(V,G){
+var B=require('@stdlib/array-base-arraylike2object/dist'),C=require('@stdlib/math-base-assert-is-negative-zero/dist'),D=require('@stdlib/math-base-assert-is-nan/dist'),A=k(),E=f(),F=A.length;function H(e,v,a,r,u){var q,s,g,t,c,i,o,n;if(e<=0||v===0)return a;if(g=B(a),g.accessorProtocol)return E(e,v,g,r,u),a;for(v<0&&(r*=-1,u-=(e-1)*r),i=0;i<F;i++)for(s=A[i],o=s;o<e;o++)if(t=a[u+o*r],!D(t)){for(q=C(t),n=o;n>=s&&(c=a[u+(n-s)*r],!(c<=t&&!(q&&c===t)));n-=s)a[u+n*r]=c;a[u+n*r]=t}return a}G.exports=H
+});var j=h(function(W,S){
+var I=require('@stdlib/strided-base-stride2offset/dist'),J=y();function K(e,v,a,r){return J(e,v,a,r,I(e,r))}S.exports=K
+});var L=require('@stdlib/utils-define-nonenumerable-read-only-property/dist'),Z=j(),M=y();L(Z,"ndarray",M);module.exports=Z;
+/** @license Apache-2.0 */
 /** @license Apache-2.0 */
 //# sourceMappingURL=index.js.map

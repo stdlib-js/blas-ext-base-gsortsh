@@ -2,6 +2,50 @@
 
 > Package changelog.
 
+<section class="release" id="unreleased">
+
+## Unreleased (2025-02-09)
+
+<section class="features">
+
+### Features
+
+-   [`ece4002`](https://github.com/stdlib-js/stdlib/commit/ece40025e9afce7032cd1072c1d1a8b856726564) - add accessor arrays support and refactor `blas/ext/base/gsortsh` [(#5122)](https://github.com/stdlib-js/stdlib/pull/5122)
+
+</section>
+
+<!-- /.features -->
+
+<section class="commits">
+
+### Commits
+
+<details>
+
+-   [`ece4002`](https://github.com/stdlib-js/stdlib/commit/ece40025e9afce7032cd1072c1d1a8b856726564) - **feat:** add accessor arrays support and refactor `blas/ext/base/gsortsh` [(#5122)](https://github.com/stdlib-js/stdlib/pull/5122) _(by Muhammad Haris)_
+
+</details>
+
+</section>
+
+<!-- /.commits -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 1 person contributed to this release. Thank you to this contributor:
+
+-   Muhammad Haris
+
+</section>
+
+<!-- /.contributors -->
+
+</section>
+
+<!-- /.release -->
+
 <section class="release" id="v0.2.2">
 
 ## 0.2.2 (2024-07-27)
